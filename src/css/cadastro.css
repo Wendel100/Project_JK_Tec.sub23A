@@ -1,0 +1,18 @@
+#picture--input{
+    display:none;
+}.picture{
+    width: 400px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.picture:hover{
+color: #777;
+background: #ccc;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="src/css/login_css.css">
+</head>
+<body>
+<form><img src="src/img/download-removebg-preview.png">
+         <h1>Administrador</h1>
+        <input type="text" id="usuario" placeholder="Usuario"><br><br>
+        <label type="password">
+        <input type="password" id="senha" placeholder="Senha"><br>
+        <button type="submit" onclick="logar();return false">Login</button>
+     </form>
+ <script>
+    function logar(){
+    var login = document.getElementById('usuario').value;
+    var senha = document.getElementById('senha').value;
+    
+    if(login=="adm" && senha=="1234"){
+        alert("usuario autenticado");
+        location.href ="cadastrar_adm.html"
+        
+    }else{
+        alert("login ou senha invalida!");
+    }
+    }</script>
+</body>
+</html>
