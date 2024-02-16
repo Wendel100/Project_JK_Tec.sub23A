@@ -1,6 +1,6 @@
 *{margin: 0;
 padding: 0;}
-body{background-image: linear-gradient(#b40640,#600173);
+body{background-color:#b40640;
 }.container{
 display: flexbox;
 padding:2px;
