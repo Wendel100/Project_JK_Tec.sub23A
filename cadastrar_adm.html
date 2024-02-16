@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="src/css/cadastro.css">
 </head>
 <body>
+    <div class="container">
+   
+    <img src="src/img/1.webp" id="imagem" width="40px" height="40px">
+    <h1 id="texte">enviar imagens</h1>
+    <label class="picture" for="picture_input" tabindex="0">
+        <span class="picture_image">
+        </span>
+        </label>        
+        <input type="file" accept="imagen/*" id="picture_input">
+           <button type="submit" onclick="trocarImagem()">trocar</button>
+           <button  type="submit" onclick="remover()">remover</button>
+           <button onclick="alteratexto()">mudar titulo</button>
+           <a href="index.html">principal</a></div>
+<script src="src/script/cadastro.js"></script>
 
-    <img id="imagem" src="src/img/1.webp" width="300px" height="300px">
-    <button onclick="trocarImagem1()">Trocar Imagem</button>
-    <button onclick="remover()">Remover Imagem</button>
-    <img id="imagem2" src="src/img/1.webp" width="300px" height="300px">
-    <button onclick="trocarImagem2()">Trocar Imagem</button>
-    <button onclick="remover()">Remover Imagem</button>
-    
-    <img id="imagem3" src="src/img/1.webp" width="300px" height="300px">
-    <button onclick="trocarImagem3()">Trocar Imagem</button>
-    <button onclick="remover()">Remover Imagem</button>
-    
-   <a href="index.html"><button>principal</button></a>
-    
-
-    <script src="src/script/cadastro.js"></script>
 </body>
 </html>

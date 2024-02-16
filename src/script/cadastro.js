@@ -1,29 +1,51 @@
+const inputFile=
+document.querySelector('#picture_input');
+const PictureImage =
+document.querySelector('.picture_image');
+const PictureImageTxt = "selecione a imagem";
+PictureImage.innerHTML= PictureImageTxt;
 
 
-function trocarImagem1() { 
-    let nova ='src/img/2.webp'
-let anterior ='src/img/1.webp' // Caminho da nova imagem
- document.getElementById('imagem').src = nova
- anterior = nova;
-}function trocarImagem2() { 
-    let nova ='src/img/3.webp'
-let anterior ='src/img/2.webp' // Caminho da nova imagem
- document.getElementById('imagem2').src = nova
- anterior = nova;
+inputFile.addEventListener('change',function(e){
+    const inputTarget = e.target;
+    const file = inputTarget.files[0];
+
+    if(file){
+        const reader = new FileReader();
+     reader.addEventListener('load', function(e){
+    const readerTarget = e.target;
+
+        const img = document.createElement('img');
+        img.src=readerTarget.result;
+        img.classList.add('novaimagem');
+
+        PictureImage.innerHTML = "";
+        PictureImage.appendChild(img);
+
+        });
+        reader.readAsDataURL(file);
+}else{
+    PictureImage.innerHTML = PictureImageTxt;
 }
+});
 
 
-function trocarImagem3() { 
-    let nova ='src/img/2.webp'
-let anterior ='src/img/1.webp' // Caminho da nova imagem
- document.getElementById('imagem3').src = nova
- anterior = nova;
+function trocarImagem(){
+    const novaImagem = inputFile;
+        // Caminho da nova imagem
+    document.getElementById('imagem').src = novaImagem;
 }
 function remover(){
-var minhaImagem = document.getElementById('imagem');
+let minhaImagem = PictureImage.innerHTML= PictureImageTxt;
 // Remover a imagem
-minhaImagem.remove();}
+minhaImagem.remove();
+}
 
+function alteratexto(){
+let title = document.querySelector('#texte');
+    title.innerHTML= "Oloco meu";
+    }
+    
 
 
 
