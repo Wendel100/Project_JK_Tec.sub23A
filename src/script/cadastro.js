@@ -8,7 +8,7 @@ PictureImage.innerHTML= PictureImageTxt;
 
 inputFile.addEventListener('change',function(e){
     const inputTarget = e.target;
-    const file = inputTarget.files[1];
+    const file = inputTarget.files[0];
 
     if(file){
         const reader = new FileReader();
@@ -31,7 +31,7 @@ inputFile.addEventListener('change',function(e){
 
 
 function trocarImagem(){
-    const novaImagem = inputFile;
+    const novaImagem =document.querySelector('#picture_input');
         // Caminho da nova imagem
     document.getElementById('imagem').src = novaImagem;
     novaImagem.trocar();
@@ -44,7 +44,7 @@ minhaImagem.remove();
 
 function alteratexto(){
 let title = document.querySelector('#texte');
-    title.innerHTML= "Oloco meu";
+    title.innerHTML= "Oloco meu, que bagunça";
     }
     
 
