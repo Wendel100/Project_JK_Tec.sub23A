@@ -8,7 +8,7 @@ PictureImage.innerHTML= PictureImageTxt;
 
 inputFile.addEventListener('change',function(e){
     const inputTarget = e.target;
-    const file = inputTarget.files[0];
+    const file = inputTarget.files[1];
 
     if(file){
         const reader = new FileReader();
@@ -34,9 +34,10 @@ function trocarImagem(){
     const novaImagem = inputFile;
         // Caminho da nova imagem
     document.getElementById('imagem').src = novaImagem;
+    novaImagem.trocar();
 }
 function remover(){
-let minhaImagem = PictureImage.innerHTML= PictureImageTxt;
+let minhaImagem = document.querySelector('.picture_image');
 // Remover a imagem
 minhaImagem.remove();
 }

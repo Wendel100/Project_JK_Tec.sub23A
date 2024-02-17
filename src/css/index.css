@@ -5,13 +5,14 @@ body{background-color:#b40640;
 display: flexbox;
 padding:2px;
 text-align: center;
-border: 3px solid#e5e5e5;
+border: 2px solid#e5e5e5;
 align-items: center;
+border-radius: 6px;
 
 }
 h1{
-    font-weight: bold;
-    font: size 18px;
+    font-weight:bold;
+    font-size: 30px;
     font-family: roboto rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     background-color: #fff7f4;
@@ -29,6 +30,10 @@ h1{
 
 }
 img{
-    border-radius: 4px;
+    border-radius: 10px;
     width: 480px;
+}#jk{justify-content: center;
+    border-radius:50px;
+    background-color:#b40640;
+    color: #e5e5e5;
 }
