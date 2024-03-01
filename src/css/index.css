@@ -8,6 +8,7 @@ text-align: center;
 border: 2px solid#e5e5e5;
 align-items: center;
 border-radius: 6px;
+font-family: Arial, Helvetica, sans-serif;
 
 }
 h1{
@@ -31,7 +32,7 @@ h1{
 }
 img{
     border-radius: 10px;
-    width: 480px;
+    width: 500px;
 }#jk{justify-content: center;
     border-radius:50px;
     background-color:#b40640;
