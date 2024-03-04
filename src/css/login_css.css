@@ -10,21 +10,23 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-padding: 80px;
+padding: 40px;
 border-radius: 15px;
 color: aliceblue;
 }
 input{
+    margin: 6px;
     padding: 6px;
     border: none;
     font-size: 12px;
 }button{
-    font-weight: bolder;
-    color: #000000;
-    border-radius: 2px;
+    font-weight: bold;
+    color:#b40640;
+    border-radius: 4px;
     margin-top: 4px;
-    background-color: aliceblue;
+    background-color:#ffffff;
     font-size: 16px;
+    font-family: sans-serif;
 }#senha{
     margin-top: 4px;
 }
@@ -32,4 +34,6 @@ img{width: 100% auto;height:200px;}
 a{
     font-family: roboto;
     color: rgb(0, 0, 0);
+}.bnt{
+    text-align: center;
 }

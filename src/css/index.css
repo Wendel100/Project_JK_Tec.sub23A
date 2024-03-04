@@ -20,6 +20,7 @@ h1{
     border-radius: 4px;
 }
 #parag{
+    font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: rgb(255, 249, 249);
@@ -30,7 +31,7 @@ h1{
     color: rgb(255, 255, 255);
 
 }
-img{
+img{padding-bottom: 20px;
     border-radius: 10px;
     width: 500px;
 }#jk{justify-content: center;
